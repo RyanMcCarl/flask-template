@@ -3,10 +3,10 @@ from flask import render_template, session, redirect, url_for, make_response
 from . import todo
 import os
 from .. import db
-
+import app
 
 def load_todotxt():
-    with open(os.path.expanduser('~/Dropbox/notes/todo.txt'), mode='r') as infile:
+    with open(app.config['TODOTXT_FILE_PATH']) as infile:
         tasks = sorted([task.strip() for task in infile.readlines()])
     return tasks
 
