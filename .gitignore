@@ -1,5 +1,9 @@
 # Config files
+<<<<<<< HEAD
 app/config.py
+=======
+config.py
+>>>>>>> ef5d7a1bfbc0b8d3b388e2e8ab1230566bd13fe9
 # Sublime Text files
 *sublime*
 # Virtual environment
@@ -549,5 +553,9 @@ build-iPhoneSimulator/
 # .ruby-version
 # .ruby-gemset
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+<<<<<<< HEAD
 .rvmrc.idea/
 .idea/
+=======
+.rvmrc
+>>>>>>> ef5d7a1bfbc0b8d3b388e2e8ab1230566bd13fe9

@@ -5,7 +5,11 @@ from app import create_app, db
 from flask_script import Manager, Shell
 from flask_migrate import Migrate, MigrateCommand
 
+<<<<<<< HEAD
 app = create_app(os.getenv('FLASK_CONFIG') or 'development')
+=======
+app = create_app(os.getenv('FLASK_CONFIG') or 'default')
+>>>>>>> ef5d7a1bfbc0b8d3b388e2e8ab1230566bd13fe9
 manager = Manager(app)
 migrate = Migrate(app, db)
 
