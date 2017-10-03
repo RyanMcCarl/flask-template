@@ -5,16 +5,14 @@ import os
 import sys
 
 from flask import Flask
-from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 
-from app.config import config
+from config import config
 
 
 sys.path.insert(0, os.path.abspath(os.getcwd()))
 sys.path.insert(0, os.path.abspath(os.pardir))
 
-bootstrap = Bootstrap()
 db = SQLAlchemy()
 
 def configure_app(app):
