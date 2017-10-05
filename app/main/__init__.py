@@ -1,6 +1,9 @@
-from flask import Blueprint
+from flask import current_app, Blueprint, render_template
+#from current_app import db
 
-main = Blueprint('main', __name__, template_folder='templates')
+main = Blueprint('main', __name__, url_prefix='/', template_folder='../templates')
 
 from . import views
-from ..main import errors
+from . import errors
+
+

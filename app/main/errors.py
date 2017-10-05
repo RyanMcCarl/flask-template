@@ -1,6 +1,6 @@
-#!/usr/env/python3
+#!/usr/bin/python3
 #
-from flask import render_template
+from flask import render_template, current_app
 from . import main
 
 @main.app_errorhandler(404)

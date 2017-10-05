@@ -5,9 +5,9 @@ import os
 import pytest
 import sys
 
-sys.path.insert(0, os.path.abspath(os.getcwd()))
-sys.path.insert(0, os.path.abspath(os.pardir))
-sys.path.insert(0, os.path.expanduser('~/Dropbox/dev/ryanserver'))
+#sys.path.insert(0, os.path.abspath(os.getcwd()))
+#sys.path.insert(0, os.path.abspath(os.pardir))
+#sys.path.insert(0, os.path.expanduser('~/Dropbox/dev/flask-template'))
 
 from app import create_app
 
@@ -27,8 +27,3 @@ class ViewTests:
 
     def test_todo(client):
         assert client.get(url_for('todo')).status_code == 200
-
-
-#if __name__ == '__main__':
-#    app = app()
-#    client = app.test_client()
