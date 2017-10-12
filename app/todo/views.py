@@ -1,8 +1,10 @@
 from datetime import datetime
-from flask import render_template, session, redirect, url_for, make_response
-from . import todo
+from flask import current_app, render_template, session, redirect, url_for, make_response
 import os
+from . import todo
+#from app import app, errors, views
 from ..models import db
+
 
 #import app
 
